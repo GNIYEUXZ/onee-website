@@ -1,0 +1,87 @@
+@use '../components/variables' as v;
+
+.project-detail {
+    padding: v.$content-padding;
+
+    .top-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .back-button {
+            line-height: 1;
+            font-family: v.$body-font-s;
+            font-size: v.$font-size-s;
+
+            a {
+                display: flex;
+                align-items: center;
+            }
+        }
+
+        .project-intro {
+            width: 260px;
+            text-align: right;
+            margin-bottom: 10px;
+            font-family: v.$body-font-s;
+
+            h6 {
+                font-weight: 400;
+                font-size: v.$font-size-m;
+                line-height: 1;
+                margin-bottom: 10px;
+            }
+
+            p {
+                font-size: v.$font-size-s;
+                margin-bottom: 35px;
+            }
+        }
+    }
+
+    .intro {
+        font-family: v.$body-font;
+        font-size: v.$font-size-s;
+        text-align: justify;
+
+        p {
+            padding-bottom: 10px;
+        }
+    }
+
+    .back-button {
+        line-height: 1;
+        font-family: v.$body-font-s;
+        font-size: v.$font-size-s;
+
+        a {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    .project-images {
+        margin-top: 20px;
+
+        img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+@media screen and (max-width:500px) {
+    .project-detail {
+        padding: v.$mobile-padding;
+
+        .project-intro {
+            width: 100vw;
+            
+        }
+
+        .intro{
+            font-size: 12px;
+        }
+    }
+}
